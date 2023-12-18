@@ -1,0 +1,31 @@
+class Student{
+    int id;
+    String name;
+    String Collage_name;
+    String study;
+    Student(){
+        System.out.println("Default Constructor");
+    }
+    // Parameterized constructor 
+    Student(int i,String n,String c){
+        id=i;
+        name=n;
+        Collage_name=c;
+    }
+    Student(int i,String n,String c,String s){
+        id=i;
+        name=n;
+        Collage_name=c;
+        study=s;
+    }
+    
+    public static void main(String[] args){
+        Student t1 = new Student();
+        Student t2 = new Student(1,"Rajesh","VIT");
+        Student t3 = new Student(2,"Tatum","VIT","B.Tech");
+        System.out.println(t2.id+" "+t2.name+" "+t2.Collage_name);
+        System.out.println(t3.id+" "+t3.name+" "+t3.Collage_name+" "+t3.study);
+        
+        
+    }
+}
